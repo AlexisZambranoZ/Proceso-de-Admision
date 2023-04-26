@@ -1,0 +1,1756 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imgIcon{
+    max-width: 25px;
+    max-height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+    padding: 0 !important;
+}
+.iconMateria1{
+
+    min-width: 35px;
+    min-height: 35px;
+    padding: 0 ;
+}
+
+.motocle_completo{
+    max-width: 25vh;
+    /* background: #337CCA; */
+
+}
+.motocle{
+    max-width: 100%;
+}
+
+
+/* ------------------------------------- Estilos para pantallas de 463px o menos ----------------------------------*/
+@media (max-width: 463px) {
+
+    /* Titulo - nombre de carrera  */
+    .nameCarrera {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titleCarrera {
+        text-align: center;
+        padding: 0px 0px;
+        font-size: 24px;
+
+        margin-top: 0rem;
+        font-weight: bold;
+    }
+
+    /* Botones */
+    .contenBotones {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenBotones {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        padding: 0rem 0rem;
+    }
+
+    /* primer año */
+    .primerAño {
+        padding-right: .5rem;
+    }
+
+
+    .btn1 {
+        padding: 12px;
+        margin: .5rem .5rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #FF6C0C;
+
+    }
+
+    .btn2 {
+        padding: 12px;
+        margin: .5rem .5rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DC5205;
+    }
+
+    .btn3 {
+        padding: 12px;
+        margin: .5rem 0rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DBA800;
+    }
+
+    /* segundo año */
+    .segundoAño {
+        padding-left: .5rem;
+    }
+
+    .btn4 {
+        padding: 12px;
+        margin: .5rem .5rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #B9D870;
+
+    }
+
+    .btn5 {
+        padding: 12px;
+        margin: .5rem .5rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #86C61A;
+    }
+
+    .btn6 {
+        padding: 12px;
+        margin: .5rem 0rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #006344;
+    }
+
+    /* numero de año */
+    .numAño {
+        text-align: center;
+        padding: 1rem;
+
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /*---------- Seccion de materias por cuatrimestre  -------------*/
+
+    /* Titulo - numero de cuatrimeste  */
+    .nameCuatri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 3rem;
+
+    }
+
+    .titleCuatri {
+        text-align: center;
+        padding: 0px 0px;
+        font-size: 24px;
+
+        margin-top: 0rem;
+        font-weight: bold;
+    }
+
+    /* materias */
+    .contenMaterias {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .materia1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        background-color: #D9D9D9;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .iconMateria1 {
+        display: flex;
+        align-items: center; /* centra verticalmente el contenido */
+        justify-content: center; /* centra horizontalmente el contenido */
+        background-color: white;
+        color: #DC5205;
+        padding: .5rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+
+        height: 25px;
+        width: 25px;
+    }
+
+    .nameMateria1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+        color: #434343;
+    }
+
+
+    /* Contenedor Oculto */
+    .contenedor-cuatri {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    /* La clase active hace que el contenedor se vea */
+    .contenedor-cuatri.activo {
+        visibility: visible;
+        display: block;
+    }
+
+    /* efectos de botones */
+    .btn1.activo{
+        background-color: #FF6C0C;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn1:hover{
+        background-color: #FF6C0C;
+    }
+
+    .btn2.activo{
+        background-color: #DC5205;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn2:hover{
+        background-color: #DC5205;
+    }
+
+    .btn3.activo{
+        background-color: #DBA800;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn3:hover{
+        background-color: #DBA800;
+    }
+
+    .btn4.activo{
+        background-color: #B9D870;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn4:hover{
+        background-color: #B9D870;
+    }
+
+    .btn5.activo{
+        background-color: #86C61A;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn5:hover{
+        background-color: #86C61A;
+    }
+
+    .btn6.activo{
+        background-color: #006344;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn6:hover{
+        background-color: #006344;
+    }
+
+
+}
+
+/* ------------------------------------- Estilos para pantallas de 463px a 577px ----------------------------------*/
+@media (min-width: 463px) and (max-width: 577px) {
+
+    /* Titulo - nombre de carrera  */
+    .nameCarrera {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titleCarrera {
+        text-align: center;
+        padding: 0px 0px;
+        font-size: 24px;
+
+        margin-top: 0rem;
+        font-weight: bold;
+    }
+
+    /* Botones */
+    .contenBotones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenBotones {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        padding: 0rem 0rem;
+    }
+
+    /* primer año */
+    .primerAño {
+        padding-right: 2rem;
+    }
+
+
+    .btn1 {
+        padding: 1rem;
+        margin: .5rem .5rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #FF6C0C;
+
+    }
+
+    .btn2 {
+        padding: 1rem;
+        margin: .5rem .5rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DC5205;
+    }
+
+    .btn3 {
+        padding: 1rem;
+        margin: .5rem 0rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DBA800;
+    }
+
+    /* segundo año */
+    .segundoAño {
+        padding-left: 2rem;
+    }
+
+    .btn4 {
+        padding: 1rem;
+        margin: .5rem .5rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #B9D870;
+
+    }
+
+    .btn5 {
+        padding: 1rem;
+        margin: .5rem .5rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #86C61A;
+    }
+
+    .btn6 {
+        padding: 1rem;
+        margin: .5rem 0rem 0rem 0rem;
+        font-size: 16px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #006344;
+    }
+
+    /* numero de año */
+    .numAño {
+        text-align: center;
+        padding: 1rem;
+
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /*---------- Seccion de materias por cuatrimestre  -------------*/
+    /* Titulo - numero de cuatrimeste  */
+    .nameCuatri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 3rem;
+
+    }
+
+    .titleCuatri {
+        text-align: center;
+        padding: 0px 0px;
+        font-size: 24px;
+
+        margin-top: 0rem;
+        font-weight: bold;
+    }
+
+    /* materias */
+    .contenMaterias {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .materia1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        background-color: #D9D9D9;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .iconMateria1 {
+        display: flex;
+        align-items: center; /* centra verticalmente el contenido */
+        justify-content: center; /* centra horizontalmente el contenido */
+        background-color: white;
+        color: #DC5205;
+        padding: .5rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+
+        height: 30px;
+        width: 30px;
+    }
+
+    .nameMateria1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+        color: #434343;
+    }
+
+
+    /* Contenedor Oculto */
+    .contenedor-cuatri {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    /* La clase active hace que el contenedor se vea */
+    .contenedor-cuatri.activo {
+        visibility: visible;
+        display: block;
+    }
+
+    /* efectos de botones */
+    .btn1.activo{
+        background-color: #FF6C0C;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn1:hover{
+        background-color: #FF6C0C;
+    }
+
+    .btn2.activo{
+        background-color: #DC5205;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn2:hover{
+        background-color: #DC5205;
+    }
+
+    .btn3.activo{
+        background-color: #DBA800;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn3:hover{
+        background-color: #DBA800;
+    }
+
+    .btn4.activo{
+        background-color: #B9D870;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn4:hover{
+        background-color: #B9D870;
+    }
+
+    .btn5.activo{
+        background-color: #86C61A;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn5:hover{
+        background-color: #86C61A;
+    }
+
+    .btn6.activo{
+        background-color: #006344;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn6:hover{
+        background-color: #006344;
+    }
+
+
+}
+
+/*--------------------------------------- Estilos para pantallas entre 375px y 768px -----------------------------*/
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Titulo - nombre de carrera  */
+    .nameCarrera {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titleCarrera {
+        text-align: center;
+        padding: 0px 0px;
+        font-size: 32px;
+
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    /* Botones */
+    .contenBotones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenBotones {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 0rem 0rem;
+    }
+
+    /* primer año */
+    .primerAño {
+        padding-left: 0rem;
+    }
+
+
+    .btn1 {
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        font-size: 24px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #FF6C0C;
+
+    }
+
+    .btn2 {
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        font-size: 24px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DC5205;
+    }
+
+    .btn3 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 24px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DBA800;
+    }
+
+    /* segundo año */
+    .segundoAño {
+        padding-right: 0rem;
+    }
+
+    .btn4 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 24px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #B9D870;
+
+    }
+
+    .btn5 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: 24px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #86C61A;
+    }
+
+    .btn6 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: 24px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #006344;
+    }
+
+    /* numero de año */
+    .numAño {
+        text-align: center;
+        padding: 1rem;
+
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+
+    /*---------- Seccion de materias por cuatrimestre  -------------*/
+    /* Titulo - numero de cuatrimeste  */
+    .nameCuatri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 3rem;
+
+    }
+
+    .titleCuatri {
+        text-align: center;
+        padding: 0px 0px;
+        font-size: 32px;
+
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    /* materias */
+    .contenMaterias {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .materia1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        background-color: #D9D9D9;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .iconMateria1 {
+        display: flex;
+        align-items: center; /* centra verticalmente el contenido */
+        justify-content: center; /* centra horizontalmente el contenido */
+        background-color: white;
+        color: #DC5205;
+        padding: .5rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+
+        height: 30px;
+        width: 30px;
+    }
+
+    .nameMateria1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+        color: #434343;
+    }
+
+    /* Contenedor Oculto */
+    .contenedor-cuatri {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    /* La clase active hace que el contenedor se vea */
+    .contenedor-cuatri.activo {
+        visibility: visible;
+        display: block;
+    }
+
+    /* efectos de botones */
+    .btn1.activo{
+        background-color: #FF6C0C;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn1:hover{
+        background-color: #FF6C0C;
+    }
+
+    .btn2.activo{
+        background-color: #DC5205;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn2:hover{
+        background-color: #DC5205;
+    }
+
+    .btn3.activo{
+        background-color: #DBA800;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn3:hover{
+        background-color: #DBA800;
+    }
+
+    .btn4.activo{
+        background-color: #B9D870;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn4:hover{
+        background-color: #B9D870;
+    }
+
+    .btn5.activo{
+        background-color: #86C61A;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn5:hover{
+        background-color: #86C61A;
+    }
+
+    .btn6.activo{
+        background-color: #006344;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn6:hover{
+        background-color: #006344;
+    }
+
+
+
+
+}
+
+/* -------------------------------------- Estilos para pantallas de 768px y 1400px -------------------------------*/
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* Titulo - nombre de carrera  */
+    .nameCarrera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .titleCarrera {
+        text-align: center;
+        padding: 0rem 0rem;
+        font-size: 32px;
+
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    /* Botones */
+    .contenBotones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenBotones {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 0rem 0rem;
+    }
+
+    /* primer año */
+    .primerAño {
+        padding-left: 2rem;
+    }
+
+
+    .btn1 {
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #FF6C0C;
+
+    }
+
+    .btn2 {
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DC5205;
+    }
+
+    .btn3 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DBA800;
+    }
+
+    /* segundo año */
+    .segundoAño {
+        padding-right: 2rem;
+    }
+
+    .btn4 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #B9D870;
+
+    }
+
+    .btn5 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #86C61A;
+    }
+
+    .btn6 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #006344;
+    }
+
+    /* numero de año */
+    .numAño {
+        text-align: center;
+        padding: 1rem;
+
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    /*---------- Seccion de materias por cuatrimestre  -------------*/
+
+    /* Titulo - numero de cuatrimeste  */
+    .nameCuatri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titleCuatri {
+        text-align: center;
+        padding: 0rem 0rem;
+        font-size: 32px;
+
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    /* materias */
+    .contenMaterias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .materia1 {
+
+        display: flex;
+        justify-content: start;
+        background-color: #D9D9D9;
+        padding: 1rem;
+        min-width: 48%;
+        border-radius: 8px;
+        margin: 1%;
+        margin-bottom: 1rem;
+        width: 48%;
+    }
+
+
+
+
+
+
+    .iconMateria1 {
+        display: flex;
+        align-items: center; /* centra verticalmente el contenido */
+        justify-content: center; /* centra horizontalmente el contenido */
+        background-color: white;
+        color: #DC5205;
+        padding: .5rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+
+        height: 35px;
+        width: 35px;
+    }
+
+    .nameMateria1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+        color: #434343;
+    }
+
+    /* Contenedor Oculto */
+    .contenedor-cuatri {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    /* La clase active hace que el contenedor se vea */
+    .contenedor-cuatri.activo {
+        visibility: visible;
+        display: block;
+    }
+
+    /* efectos de botones */
+    .btn1.activo{
+        background-color: #FF6C0C;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn1:hover{
+        background-color: #FF6C0C;
+    }
+
+    .btn2.activo{
+        background-color: #DC5205;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn2:hover{
+        background-color: #DC5205;
+    }
+
+    .btn3.activo{
+        background-color: #DBA800;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn3:hover{
+        background-color: #DBA800;
+    }
+
+    .btn4.activo{
+        background-color: #B9D870;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn4:hover{
+        background-color: #B9D870;
+    }
+
+    .btn5.activo{
+        background-color: #86C61A;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn5:hover{
+        background-color: #86C61A;
+    }
+
+    .btn6.activo{
+        background-color: #006344;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn6:hover{
+        background-color: #006344;
+    }
+
+
+}
+
+/* -------------------------------------- Estilos para pantallas de 768px y 1400px -------------------------------*/
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* Titulo - nombre de carrera  */
+    .nameCarrera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .titleCarrera {
+        text-align: center;
+        padding: 0rem 2rem;
+        font-size: 32px;
+
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    /* Botones */
+    .contenBotones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenBotones {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 0rem 0rem;
+    }
+
+    /* primer año */
+    .primerAño {
+        padding-left: 5rem;
+    }
+
+
+    .btn1 {
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #FF6C0C;
+
+    }
+
+    .btn2 {
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DC5205;
+    }
+
+    .btn3 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DBA800;
+    }
+
+    /* segundo año */
+    .segundoAño {
+        padding-right: 5rem;
+    }
+
+    .btn4 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #B9D870;
+
+    }
+
+    .btn5 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #86C61A;
+    }
+
+    .btn6 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #006344;
+    }
+
+    /* numero de año */
+    .numAño {
+        text-align: center;
+        padding: 1rem;
+
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    /*---------- Seccion de materias por cuatrimestre  -------------*/
+    /* Titulo - numero de cuatrimeste  */
+    .nameCuatri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titleCuatri {
+        text-align: center;
+        padding: 0rem 2rem;
+        font-size: 32px;
+
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    /* materias */
+    .contenMaterias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .materia1 {
+
+        display: flex;
+        justify-content: start;
+        background-color: #D9D9D9;
+        padding: 1rem;
+        min-width: 48%;
+        border-radius: 8px;
+        margin: 1%;
+        margin-bottom: 1rem;
+        width: 48%;
+    }
+
+    .iconMateria1 {
+        display: flex;
+        align-items: center; /* centra verticalmente el contenido */
+        justify-content: center; /* centra horizontalmente el contenido */
+        background-color: white;
+        color: #DC5205;
+        padding: .5rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+
+        height: 35px;
+        width: 35px;
+    }
+
+    .iconM {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .nameMateria1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+        color: #434343;
+    }
+
+
+    /* Contenedor Oculto */
+    .contenedor-cuatri {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    /* La clase active hace que el contenedor se vea */
+    .contenedor-cuatri.activo {
+        visibility: visible;
+        display: block;
+
+    }
+
+    /* efectos de botones */
+    .btn1.activo{
+        background-color: #FF6C0C;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn1:hover{
+        background-color: #FF6C0C;
+    }
+
+    .btn2.activo{
+        background-color: #DC5205;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn2:hover{
+        background-color: #DC5205;
+    }
+
+    .btn3.activo{
+        background-color: #DBA800;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn3:hover{
+        background-color: #DBA800;
+    }
+
+    .btn4.activo{
+        background-color: #B9D870;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn4:hover{
+        background-color: #B9D870;
+    }
+
+    .btn5.activo{
+        background-color: #86C61A;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn5:hover{
+        background-color: #86C61A;
+    }
+
+    .btn6.activo{
+        background-color: #006344;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn6:hover{
+        background-color: #006344;
+    }
+
+
+
+}
+
+/* -------------------------------------- Estilos para pantallas de 768px y 1400px -------------------------------*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    /* Titulo - nombre de carrera  */
+    .nameCarrera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .titleCarrera {
+        text-align: center;
+        padding: 0rem 0rem;
+        font-size: 42px;
+
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    /* Botones */
+    .contenBotones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenBotones {
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+        padding: 0rem 0rem;
+    }
+
+    /* primer año */
+    .primerAño {
+        padding-left: 4rem;
+    }
+
+
+    .btn1 {
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #FF6C0C;
+
+    }
+
+    .btn2 {
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DC5205;
+    }
+
+    .btn3 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DBA800;
+    }
+
+    /* segundo año */
+    .segundoAño {
+        padding-right: 4rem;
+    }
+
+    .btn4 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #B9D870;
+
+    }
+
+    .btn5 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #86C61A;
+    }
+
+    .btn6 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 1rem;
+        font-size: 42px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #006344;
+    }
+
+    /* numero de año */
+    .numAño {
+        text-align: center;
+        padding: 1rem;
+
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    /*---------- Seccion de materias por cuatrimestre  -------------*/
+    /* Titulo - numero de cuatrimeste  */
+    .nameCuatri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titleCuatri {
+        text-align: center;
+        padding: 0rem 0rem;
+        font-size: 42px;
+
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+    /* materias */
+    .contenMaterias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .materia1 {
+
+        display: flex;
+        justify-content: start;
+        background-color: #D9D9D9;
+        padding: 1rem;
+        min-width: 48%;
+        border-radius: 8px;
+        margin: 1%;
+        margin-bottom: 1rem;
+        width: 48%;
+    }
+
+    .iconMateria1 {
+        display: flex;
+        align-items: center; /* centra verticalmente el contenido */
+        justify-content: center; /* centra horizontalmente el contenido */
+        background-color: white;
+        color: #DC5205;
+        padding: .5rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+
+        height: 35px;
+        width: 35px;
+    }
+
+    .iconM {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .nameMateria1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+        color: #434343;
+    }
+
+    /* Contenedor Oculto */
+    .contenedor-cuatri {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    /* La clase active hace que el contenedor se vea */
+    .contenedor-cuatri.activo {
+        visibility: visible;
+        display: block;
+    }
+
+
+
+    /* efectos de botones */
+
+    .btn1.activo{
+        background-color: #FF6C0C;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn1:hover{
+        background-color: #FF6C0C;
+    }
+
+    .btn2.activo{
+        background-color: #DC5205;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn2:hover{
+        background-color: #DC5205;
+    }
+
+    .btn3.activo{
+        background-color: #DBA800;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn3:hover{
+        background-color: #DBA800;
+    }
+
+    .btn4.activo{
+        background-color: #B9D870;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn4:hover{
+        background-color: #B9D870;
+    }
+
+    .btn5.activo{
+        background-color: #86C61A;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn5:hover{
+        background-color: #86C61A;
+    }
+
+    .btn6.activo{
+        background-color: #006344;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn6:hover{
+        background-color: #006344;
+    }
+
+
+
+
+
+}
+
+/* --------------------------------------- Estilos para pantallas de 1400px o más -------------------------------*/
+@media (min-width: 1399px) {
+
+    /* Titulo - nombre de carrera  */
+    .nameCarrera {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titleCarrera {
+        text-align: center;
+        padding: 0rem 4rem;
+        font-size: 48px;
+
+        margin-top: 3rem;
+        font-weight: bold;
+    }
+
+    /* Botones */
+    .contenBotones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contenBotones {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    /* primer año */
+    .primerAño {
+        padding-left: 6rem;
+    }
+
+
+    .btn1 {
+        padding: 1rem;
+        margin: 0rem 3rem 0rem 0rem;
+        font-size: 48px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #FF6C0C;
+
+    }
+
+    .btn2 {
+        padding: 1rem;
+        margin: 0rem 3rem 0rem 0rem;
+        font-size: 48px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DC5205;
+    }
+
+    .btn3 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 48px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #DBA800;
+    }
+
+    /* segundo año */
+    .segundoAño {
+        padding-right: 6rem;
+    }
+
+    .btn4 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 0rem;
+        font-size: 48px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #B9D870;
+
+    }
+
+    .btn5 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 3rem;
+        font-size: 48px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #86C61A;
+    }
+
+    .btn6 {
+        padding: 1rem;
+        margin: 0rem 0rem 0rem 3rem;
+        font-size: 48px;
+        font-weight: bold;
+
+        border: none;
+        background-color: #006344;
+    }
+
+    /* numero de año */
+    .numAño {
+        text-align: center;
+        padding: 1rem;
+
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+
+
+    /*---------- Seccion de materias por cuatrimestre  -------------*/
+
+    /* Titulo - numero de cuatrimeste  */
+    .nameCuatri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .titleCuatri {
+        text-align: center;
+        padding: 0rem 4rem;
+        font-size: 48px;
+
+        margin-top: 3rem;
+        font-weight: bold;
+    }
+
+    /* materias */
+    .contenMaterias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .materia1 {
+
+        display: flex;
+        justify-content: start;
+        background-color: #D9D9D9;
+        padding: 1rem;
+        min-width: 48%;
+        border-radius: 8px;
+        margin: 1%;
+        margin-bottom: 1rem;
+        width: 48%;
+    }
+
+    .iconMateria1 {
+        display: flex;
+        align-items: center; /* centra verticalmente el contenido */
+        justify-content: center; /* centra horizontalmente el contenido */
+        background-color: white;
+        color: #DC5205;
+        padding: .5rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+
+        height: 35px;
+        width: 35px;
+    }
+
+    .iconM {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .nameMateria1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0px;
+        color: #434343;
+    }
+
+
+    /* Contenedor Oculto */
+    .contenedor-cuatri {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    /* La clase active hace que el contenedor se vea */
+    .contenedor-cuatri.activo {
+        visibility: visible;
+        display: block;
+    }
+
+
+    .btn1.activo{
+        background-color: #FF6C0C;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn1:hover{
+        background-color: #FF6C0C;
+    }
+
+    .btn2.activo{
+        background-color: #DC5205;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn2:hover{
+        background-color: #DC5205;
+    }
+
+    .btn3.activo{
+        background-color: #DBA800;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn3:hover{
+        background-color: #DBA800;
+    }
+
+    .btn4.activo{
+        background-color: #B9D870;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn4:hover{
+        background-color: #B9D870;
+    }
+
+    .btn5.activo{
+        background-color: #86C61A;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn5:hover{
+        background-color: #86C61A;
+    }
+
+    .btn6.activo{
+        background-color: #006344;
+        box-shadow: 8px 8px rgb(100, 100, 100)
+    }
+    .btn6:hover{
+        background-color: #006344;
+    }
+
+}

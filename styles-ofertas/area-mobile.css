@@ -1,0 +1,350 @@
+:root{
+    --green-primary-color: #00A887;
+    --orange-primary-color:#FF5613;
+    --yellow-primary-color:#F9BE00;
+
+    --white:#FFFFFF;
+    --dark:#000000;
+
+    --drown-secondary-color:#886D4B;
+    --red-secondary-color:#E2231A;
+    --blue-secondary-color:#337CCA;
+
+    --background-color: #DEDEDE;
+
+    /* STYLES FOR FONT FAMILY
+    TITLES
+        H1 Open Sans Bold 18
+        H2 Open Sans Bold 16
+        H3 Open Sans Bold 14
+        H4 Open Sans Bold 12
+        H5 Open Sans Bold 10
+
+    SUB-TITLES
+        H1 Open Sans SemiBold 18
+        H2 Open Sans Bold 16
+        H3 Open Sans Bold 14
+        H4 Open Sans Bold 12
+        H5 Open Sans Bold 10
+
+    BODY
+        B1 Open Sans Regular 14
+        B2 Open Sans Regular 12
+        B3 Open Sans Regular 10
+        B4 Open Sans Regular 9
+        B5 Open Sans Bold 8
+    */
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* header{
+    width: 100%;
+    height: 2.8125rem;
+    background-color: var(--orange-primary-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+.div-information{
+    color: var(--white);
+    padding: 5rem 0;
+    background-size: cover;
+}
+
+
+.area-industrial{
+    background: linear-gradient(43.31deg, #005065 9.22%, #00A887 92.93%);
+    border-radius: 10px;
+}
+
+.bg-administration{
+    background: linear-gradient(43.31deg, #005065 9.22%, #00A887 92.93%);
+    border-radius: 10px;
+}
+
+.bg-technology{
+    background: linear-gradient(43.31deg, #005065 9.22%, #00A887 92.93%);
+    border-radius: 10px;
+}
+
+.div-information h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.div-information p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* .careers{
+    display: grid;
+    grid-template-columns: 48% 48% ;
+    grid-auto-rows: 15rem;
+    column-gap: 10px;
+    row-gap: 25px;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+} */
+
+.careers{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 10px;
+    row-gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: .5rem;
+}
+
+h2.title-careers{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark);
+    text-align: center;
+    margin: 2.5rem 0 1rem;
+    text-transform: uppercase;
+}
+
+.careers .card-custom{
+    width: 48%;
+    height: 15rem;
+    margin: 1rem auto;
+    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.3);
+    max-width: 100% !important;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 0px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(1.44deg, rgba(201, 201, 201, 0.65) 1.23%, #E4E4E4 93.66%);
+    transform: rotate(0.05deg);
+}
+
+.careers .card-custom:hover{
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+
+.card-custom .carousel{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.card-custom img{
+    height: auto;
+    max-height: 200px;
+    border-radius: 10px;
+    padding: 1rem;
+    object-fit: cover;
+}
+
+.card-custom .card-body{
+    width: 55%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-custom .card-body h4{
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cartoon{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+}
+
+.cartoon img{
+    margin-top: -1rem;
+    height: 25rem;
+    border-radius: 10px;
+
+}
+
+
+/* FOOTER */
+/* footer{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer .contact{
+    width: 100%;
+    padding: 1.7rem 0;
+    background: linear-gradient(275.09deg, #FF6C0C 4.76%, #F9BE00 128.31%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .contact h5{
+    font-size: 16px;
+    font-weight: 700;
+    color:var(--white);
+    width: 100%;
+    padding-left: 2rem;
+}
+
+footer .contact img{
+    width: 32px;
+    height: 32px;
+    margin-right: .7rem;
+    margin-bottom: .4rem;
+}
+
+footer .contact p{
+    font-size: 28px;
+    font-weight: 700;
+    color:var(--white);
+}
+
+footer .contact .div-social-media{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .logos{
+    width: 100%;
+    height: auto;
+    padding: 1.7rem 0;
+    background: linear-gradient(90.19deg, #1D8577 0.04%, #005065 99.71%);
+} */
+
+
+
+/* RESPONSIVE DESING */
+/* --------------------------------------Estilos para pantallas de 375px o menos ----------------------------------*/
+
+@media (max-width: 577px) {
+
+    .careers .card-custom{
+        width: 100%;
+        height: 150px;
+
+    }
+
+    .card-custom img{
+        padding: .25rem 0 .25rem .5rem;
+        border-radius: 10px;
+
+    }
+
+    .card-custom .card-body h4 {
+        font-size: 15px;
+    }
+
+    .carousel-item img{
+        border-radius: 10px;
+        max-height: 130px;
+
+    }
+}
+
+
+
+/*------------------------------------------ Estilos para pantallas entre 375px y 768px -------------------------*/
+@media (min-width: 577px) and (max-width: 769px) {
+
+    .careers .card-custom{
+        min-width: 450px;
+        height: 12rem;
+    }
+
+    .card-custom img{
+        padding: .75rem;
+        border-radius: 25px;
+
+    }
+
+    .card-custom .card-body h4 {
+        font-size: 14px;
+    }
+
+    .cartoon img{
+        height: 17rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+    .careers .card-custom{
+        min-width: 90%;
+        width: 90%;
+        height: 12rem;
+        max-height: 190px;
+    }
+
+    .card-custom img{
+        border-radius: 25px;
+
+    }
+
+}
+
+
+/* -----------------------------------------Estilos para pantallas de 768px y 1400px -------------------------------*/
+@media (min-width: 1199px) and (max-width: 1400px) {
+    .careers .card-custom{
+        min-width: 500px;
+        height: 12rem;
+    }
+    .card-custom img{
+        border-radius: 25px;
+
+    }
+
+}
+
+
+/* -----------------------------------------Estilos para pantallas de 1400px o más -------------------------------*/
+@media (min-width: 1400px) {
+    .card-custom img{
+        padding: 2rem;
+        border-radius: 25px;
+
+    }
+}

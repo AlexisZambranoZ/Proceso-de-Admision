@@ -1,0 +1,496 @@
+html {
+    position: relative;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 375px;
+    background: #DEDEDE;
+     animation: background-animation var(--animation-duration) infinite alternate;
+}
+
+body {
+    background: #DEDEDE;
+    animation: background-animation var(--animation-duration) infinite alternate;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+@keyframes background-animation {
+    0% {
+        background-image: var(--background-image-1);
+    }
+
+    50% {
+        background-image: var(--background-image-2);
+    }
+
+    100% {
+        background-image: var(--background-image-1);
+    }
+}
+
+a{
+    color: white;
+
+}
+.redesBlack{
+    color:#070808cd ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e7490b;
+}
+
+header {
+    max-height: 120px;
+}
+
+header svg {
+    max-height: 120px;
+}
+
+.container {
+    padding: 30px;
+}
+
+footer {
+    z-index: 2;
+    /* position: fixed; */
+}
+
+
+footer.footer-pc{
+    position: absolute;
+}
+
+footer.footer-center{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 180px) {
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+
+    .menuMovil{
+        display: none;
+    }
+}
+
+
+
+/* -----------------------------------------------------------Estilos para pantallas de 375px o menos --------------------------------------------*/
+@media (max-width: 577px) {
+
+    header {
+        border-left: 20px solid #DEDEDE;
+        border-right: 20px solid#DEDEDE;
+        border-bottom: #DEDEDE;
+        background: #DEDEDE;
+        height: 90px;
+    }
+
+    header svg {
+        height: 90px;
+        min-height: 90px;
+    }
+
+    #svgHeader2 {
+        display: none;
+    }
+
+
+    footer {
+        width: 100%;
+        min-width: 375px;
+        min-height: 317px;
+        height: 317px;
+        /* background: yellowgreen; */
+        position: relative;
+        bottom: 0;
+        color: white;
+    }
+
+    footer.footer-pc {
+        position: absolute;
+    }
+
+
+    #footerPC {
+        display: none;
+    }
+
+    .contacto {
+        min-width: 100%;
+        height: 50%;
+        min-height: 50%;
+        background: linear-gradient(275.09deg, #FF6C0C 4.76%, #F9BE00 128.31%);
+    }
+
+    .contacto h2 {
+        padding: 15px 25px;
+        margin: 0;
+
+    }
+
+    .whattsTelegram {
+        padding: 0 10px;
+        width: max-content;
+        height: 32px;
+        /* background: #005065; */
+        float: left;
+        margin: 0 auto;
+    }
+
+    .whattsTelegram i {
+        font-size: 32px;
+        margin: 0 1px;
+    }
+
+    .numero {
+        /* background: #6caaba; */
+        float: left;
+        margin: 0;
+    }
+
+    .numero h1 {
+        max-height: 32px;
+        height: 32px;
+        /* background: #6caaba; */
+        float: left;
+        margin: 0;
+    }
+
+    .contenedorNumeros {
+        display: flex;
+        align-items: center;
+        /* background-color: rgb(13, 199, 0); */
+        min-width: 100%;
+        width: 100%;
+        height: 32px;
+
+    }
+
+    .contenedorInterno {
+        margin: 0 auto;
+    }
+
+    .redesSociales {
+        width: 100%;
+        height: 32px;
+        /* background: violet; */
+        margin-top: 20px;
+    }
+
+    .contenRedesSociales {
+        height: 32px;
+        width: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        /* color:  linear-gradient(275.09deg, #FF6C0C 4.76%, #F9BE00 128.31%); */
+    }
+
+    .contenRedesSociales i {
+        font-size: 32px;
+        margin: 0 6px;
+    }
+
+    .logos {
+        min-width: 100%;
+        height: 50%;
+        min-height: 50%;
+        background: linear-gradient(90.49deg, #00A887 -1.68%, #005065 99.58%);
+    }
+
+    table {
+        height: 100%;
+    }
+
+    tr {
+        /* background: #F9BE00; */
+        max-width: 50%;
+        border-width: 0 0px !important;
+    }
+
+    tr td {
+        background: #00A887;
+        width: 50%;
+        max-width: 50%;
+        height: 50%;
+        max-height: 50%;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0px !important;
+        border-style: none;
+    }
+
+    td svg {
+        margin: 0 auto;
+    }
+
+
+    .menuMovil {
+        min-height: 40px;
+        margin: 0 auto;
+        height: 80px;
+        background: #ffffff00;
+        position: fixed;
+        bottom: 0;
+        left: 51%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .menuMovil svg {
+        margin: 5vw 0;
+        width: 100%;
+        min-width: 90vw;
+        max-height: 90px;
+        max-width: 330px;
+        position: relative;
+        margin-top: 13px;
+    }
+
+    .menuMovilLateral {
+        display: none;
+    }
+
+}
+
+/*------------------------------------------------------------Estilos para pantallas entre 577px y 768px -------------------------*/
+@media (min-width: 577px) and (max-width: 769px) {
+    header {
+        padding: 20px 50px 0px 50px;
+        /* background: #DEDEDE; */
+    }
+}
+
+/*------------------------------------------------------------Estilo de footer responsive apartir de 577px-------------------------- */
+@media (min-width: 577px) {
+    footer {
+        margin: 0;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 150px;
+        max-height: 150px;
+        height: 150px;
+        background: linear-gradient(275.09deg, #FF6C0C 4.76%, #F9BE00 128.31%);
+        position: relative;
+        bottom: 0;
+        color: white;
+    }
+
+    .footer h3 {
+        margin: 0;
+        font-size: calc(.5rem + .7vw);
+
+    }
+
+    #footerMovil {
+        display: none;
+    }
+
+    .footerPCL {
+        width: 35%;
+        height: 100%;
+        /* background: rebeccapurple; */
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footerPCR {
+        width: 65%;
+        height: 100%;
+        /* background: rgb(15, 148, 197); */
+        float: left;
+    }
+
+    .footerFI {
+        font-size: 32px;
+    }
+
+    /* .footerYT {} */
+
+    .uttecam {
+        /* background: gold; */
+        float: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .uttecamoficial {
+        /* background: firebrick; */
+        float: left;
+        width: 50%;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #070808cd;
+    }
+
+    .numerosTop {
+        width: 100%;
+        height: 50%;
+    }
+
+    .logosBotton {
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(89.97deg, #1D8577 23.31%, #005065 86.82%);
+        border-radius: 100px 0 0 0;
+    }
+
+    .contentlogosBotones {
+        /* background: #F9BE00; */
+        width: 100%;
+        height: 100%;
+        padding: 0 5%;
+    }
+
+    .logoB {
+        width: 25%;
+        height: 100%;
+        /* background: #FF6C0C; */
+        float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contentnumeros {
+        float: right;
+        width: 72%;
+        max-width: 350px;
+        height: 100%;
+        /* background: tomato; */
+    }
+
+    .contenedorNumerosR {
+        margin-right: 40px;
+        font-size: 30px;
+        width: 70%;
+        max-width: 145px;
+        height: 100%;
+        /* background: #12bce7; */
+        float: right;
+        color: white;
+        display: flex;
+        /* establece un contenedor flexible */
+        flex-direction: column;
+        /* establece la dirección del flujo en columna */
+        justify-content: center;
+        /* centra verticalmente los elementos */
+    }
+
+    .contenedorWTR {
+        width: 30%;
+        height: 100%;
+        /* background: #005065; */
+        float: right;
+    }
+
+    .contenedorNumerosR h5 {
+        text-align: right;
+        margin: 0;
+        height: 50%;
+        max-width: 145px;
+        padding-top: 15px;
+        /* background: #3eb61a; */
+    }
+
+    .contenedorNumerosR h3 {
+        text-align: right;
+        font-size: .7em;
+        height: 50%;
+        padding-top: 5px;
+        max-width: 145px;
+        /* background-color: #b61a1a; */
+    }
+
+    .contenedorWTR {
+        /* background: rgb(150, 150, 69); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80px;
+    }
+
+    .contenedorIconosWT {
+        /* background: #00A887; */
+        max-width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .contenedorWTR i {
+        margin: 2px;
+        font-size: 40px;
+    }
+
+    .menuMovilLateral {
+        width: 50px;
+        max-width: 90px;
+        height: 400px;
+        max-height: 400px;
+        position: fixed;
+        top: 50%;
+        transform: translate(0, -50%);
+        /* Lo mueve hacia arriba la mitad de su altura */
+    }
+
+    #svgHeader1 {
+        display: none;
+    }
+
+    .menuMovil {
+        display: none;
+    }
+}
+
+/* -----------------------------------------Estilos para pantallas de 768px y 1400px -------------------------------*/
+@media (min-width: 769px) {
+    header {
+        width: 95vw;
+        min-width: 95vw;
+        margin-top: 5px;
+        /* border-left: 100px solid #DEDEDE; */
+        /* border-right: 100px solid#DEDEDE; */
+        border-bottom: #DEDEDE;
+        /* background: #DEDEDE; */
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+
+
+    .menuMovil {
+        display: none;
+    }
+
+    /* -------------------footer ------------------------------ */
+
+}
+
+
+/* ESTILOS UNICOS PARA REDONDEO DE BORDES EN BORDE EN PANTALLAS MUY GRANDES */
+@media (min-width: 1441px) {
+    footer.footer-center{
+        border-radius: 15px 15px 0 0;
+    }
+}

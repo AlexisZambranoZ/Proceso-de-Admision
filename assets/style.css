@@ -1,0 +1,337 @@
+/*movil debajo de 577*/
+/*--------carrusel*/
+.carousel-inner img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 400px;
+}
+.texto_convocatoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh; 
+}
+.texto_convocatoria h5{
+    margin: 0;
+    font-size: 3vh;
+    text-shadow: 1px 1px 0 #333, -1px -1px 0 #333;
+}
+
+/*----------texto con imagen de motoncle -------------*/
+.frase{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.motocabeza{
+    height: 150px;
+    width: 150px ;
+    text-align: center;
+    background: linear-gradient(90.19deg, rgba(29, 133, 119, 0.80) 0.04%, rgba(0, 81, 101, 0.99) 100%);
+    padding: 20px;
+    overflow:hidden;
+    border-radius: 100%;
+}
+.frase img{
+    display:block;
+    width:114px;
+    height:109px;
+}
+.texto_frase{
+    text-align: justify;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-------------botones de acceso -----------*/
+.botones{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.btn{
+    padding: 0;
+    background: linear-gradient(90.19deg, rgba(29, 133, 119, 0.80) 0.04%, rgba(0, 81, 101, 0.99) 100%);
+}
+.icon{
+    background: #FF6C0C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 10px 10px;  
+}
+.icon img{
+    max-width: 100%;
+    height: auto;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.texto_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+}
+.btn a .texto_btn h3{
+    margin: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*---------------imagen conbocatoria--------------- */
+.convocatoria {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+    width: 100%;
+}
+/*----------------------fechas importantes--------------------------*/
+.fechas{
+    margin: 5% 0;
+}
+.fechas .titulo{
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    text-align: center;
+    color: #fff;
+    background: #FF6C0C;
+    
+}
+.fechas .cuadros{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    height: auto;
+    margin: 5% 0;
+}
+.cuadros .fecha {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100px;
+}
+.texto{
+    font-size: 15px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6C0C;
+    color: #fff;
+    border-bottom-left-radius: 17px;
+    border-top-left-radius: 17px;
+    padding: 5px;
+}
+.dias{
+    font-size: 15px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90.19deg, rgba(29, 133, 119, 0.80) 0.04%, rgba(0, 81, 101, 0.99) 100%);
+    color: #fff;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    padding: 10px;
+}
+
+/*-------------------requisitos--------------------------------*/
+.requisitos{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #FF6C0C;
+    width: 100%;
+    height: auto;
+    border-radius: 17px;
+}
+.requisitos .titulo{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.requisitos .info{
+    margin: 10px;
+    padding: 30px;
+    width: 95%;
+    height: auto;
+    background: linear-gradient(90.19deg, rgba(29, 133, 119, 0.80) 0.04%, rgba(0, 81, 101, 0.99) 100%);
+    font-size: 15px;
+    color: #fff;
+    border-radius: 17px;
+}
+.requisitos .motocle {
+    display: none;
+}
+/*----------------------------Pasos a seguir -------------------------------------*/
+.pasos h2{
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 30px;
+    background: #FF6C0C;
+    margin: 40px 0;
+}
+.pass{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.pass .pasos1_3, .pasos4_5{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.pasos .paso{
+    color: #fff;
+    font-size: 15px;
+    background: linear-gradient(90.19deg, rgba(29, 133, 119, 0.80) 0.04%, rgba(0, 81, 101, 0.99) 100%); 
+    border-radius: 17px;
+}
+.paso{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 110px;
+}
+.pasos .numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FF6C0C;
+    border-radius: 15px;
+}
+.pasos .numero span{
+    margin: 0;
+    font-size: 30px;
+}
+.pasos .texto_pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+}
+.texto_pass p{
+    margin: 0;
+    font-size: 15px;
+}
+
+/* -----------------------------------------Estilos para pantallas de 768px y 1400px -------------------------------*/
+@media (min-width: 767px ){
+.texto_convocatoria {
+    height: 21vh; 
+}
+.texto_convocatoria h5{
+    font-size: 5vh;
+}
+.frase{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 10px;
+}
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.btn a .texto_btn h3{
+    font-size: 30px;
+}
+.fechas .cuadros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cuadros .fecha{
+    height: 150px;
+    grid-template-columns: 2fr 3fr;
+}
+.texto{
+    font-size: 20px;
+}
+.dias{
+    font-size: 20px;
+}
+.requisitos .informacion{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.requisitos .titulo{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin: 10px 0;
+}
+.requisitos .motocle {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.pass{
+    grid-template-columns: repeat(2, 1fr);
+}
+.requisitos .info{
+    margin: 2%;
+    padding: 30px;
+    width: 95%;
+    height: auto;
+    background: linear-gradient(90.19deg, rgba(29, 133, 119, 0.80) 0.04%, rgba(0, 81, 101, 0.99) 100%);
+    font-size: 22px;
+    color: #fff;
+    border-radius: 17px;
+}
+.pass .paso4, .paso5{
+    height: 100%;
+}
+}
+@media (min-width: 1200px) {
+.texto_convocatoria {
+    height: 35vh; 
+}
+.texto_convocatoria h5{
+    font-size: 8vh;
+}
+.botones{
+    grid-template-columns: repeat(4, 1fr);
+}
+.fechas .cuadros{
+    grid-template-columns: repeat(4, 1fr);
+}
+.cuadros .fecha{
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+.texto{
+    font-size: 20px;
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+.dias{
+    font-size: 20px;
+    border-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+.requisitos .informacion{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+

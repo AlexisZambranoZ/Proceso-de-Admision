@@ -1,0 +1,106 @@
+const d = document;
+
+/* BOTONES */
+const button1 = d.getElementById("button-1"),
+button2 = d.getElementById("button-2"),
+button3 = d.getElementById("button-3"),
+button4 = d.getElementById("button-4"),
+button5 = d.getElementById("button-5"),
+button6 = d.getElementById("button-6");
+
+/* CONTENEDORES DE CUATRIMESTRES */
+const MateriasCuatri1 = d.getElementById("materias-1-cuatri"),
+MateriasCuatri2 = d.getElementById("materias-2-cuatri"),
+MateriasCuatri3 = d.getElementById("materias-3-cuatri"),
+MateriasCuatri4 = d.getElementById("materias-4-cuatri"),
+MateriasCuatri5 = d.getElementById("materias-5-cuatri"),
+MateriasCuatri6 = d.getElementById("materias-6-cuatri");
+
+
+
+d.addEventListener("click",(e)=>{
+
+    if (e.target === button1) {
+        if (e.target.classList.contains("activo")) return /* El btn ya tiene la clase */
+
+        /* Estilos en el boton */
+        const btnActivo= d.querySelector(".btn.activo");
+        btnActivo.classList.remove("activo");
+        e.target.classList.add("activo");
+
+        /* Estilos para materias */
+        const ContenedorActivo = d.querySelector(".contenedor-cuatri.activo");
+        ContenedorActivo.classList.remove("activo");
+        MateriasCuatri1.classList.add("activo");
+    }
+    
+    if (e.target === button2) {
+        if (e.target.classList.contains("activo")) return /* El btn ya tiene la clase */
+
+        
+        /* Estilos en el boton */
+        const btnActivo= d.querySelector(".btn.activo");
+        btnActivo.classList.remove("activo");
+        e.target.classList.add("activo");
+
+        /* Estilos para materias */
+        const ContenedorActivo = d.querySelector(".contenedor-cuatri.activo");
+        ContenedorActivo.classList.remove("activo");
+        MateriasCuatri2.classList.add("activo");
+    }  
+
+    if (e.target === button3) {
+        if (e.target.classList.contains("activo")) return /* El btn ya tiene la clase */
+
+        /* Estilos en el boton */
+        const btnActivo= d.querySelector(".btn.activo");
+        btnActivo.classList.remove("activo");
+        e.target.classList.add("activo");
+
+        /* Estilos para materias */
+        const ContenedorActivo = d.querySelector(".contenedor-cuatri.activo");
+        ContenedorActivo.classList.remove("activo");
+        MateriasCuatri3.classList.add("activo");
+    }  
+
+    if (e.target === button4) {
+        if (e.target.classList.contains("activo")) return /* El btn ya tiene la clase */
+
+        /* Estilos en el boton */
+        const btnActivo= d.querySelector(".btn.activo");
+        btnActivo.classList.remove("activo");
+        e.target.classList.add("activo");
+
+        /* Estilos para materias */
+        const ContenedorActivo = d.querySelector(".contenedor-cuatri.activo");
+        ContenedorActivo.classList.remove("activo");
+        MateriasCuatri4.classList.add("activo");
+    }
+    
+    if (e.target === button5) {
+        if (e.target.classList.contains("activo")) return /* El btn ya tiene la clase */
+        /* Estilos en el boton */
+        const btnActivo= d.querySelector(".btn.activo");
+        btnActivo.classList.remove("activo");
+        e.target.classList.add("activo");
+
+        /* Estilos para materias */
+        const ContenedorActivo = d.querySelector(".contenedor-cuatri.activo");
+        ContenedorActivo.classList.remove("activo");
+        MateriasCuatri5.classList.add("activo");
+    }  
+
+    if (e.target === button6) {
+        if (e.target.classList.contains("activo")) return /* El btn ya tiene la clase */
+
+        /* Estilos en el boton */
+        const btnActivo= d.querySelector(".btn.activo");
+        btnActivo.classList.remove("activo");
+        e.target.classList.add("activo");
+
+        /* Estilos para materias */
+        const ContenedorActivo = d.querySelector(".contenedor-cuatri.activo");
+        ContenedorActivo.classList.remove("activo");
+        MateriasCuatri6.classList.add("activo");
+    }  
+});
